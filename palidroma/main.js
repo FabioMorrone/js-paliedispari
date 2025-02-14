@@ -18,9 +18,14 @@ function controlloParola(parola){
 // richiamo funzione e salvo risultato// 
 const risultato = controlloParola(parola)
 
+if (risultato){
+    console.log(parola + " è una parola palindroma ");
+     
 
-console.log(parola + " è una parola palindroma ");
-console.log(parola + " non è una parola palindroma ");   
+}else { 
+    console.log(parola + " non è una parola palindroma "); 
+}
+  
 
 
 
