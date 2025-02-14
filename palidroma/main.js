@@ -10,22 +10,14 @@ function controlloParola(parola){
  const caratteri = parola.split('');
  const invertita = caratteri.reverse().join('');
  // ritorno del risultato// 
- if (parola === invertita){
-    console.log(parola + " è una parola palindroma ");
-  }else {
-    console.log(parola + " non è una parola palindroma ");   
-  }
+ return parola === invertita
 } 
  
 
 // richiamo funzione e salvo risultato// 
 controlloParola(parola)
-
-
-
-
-
-
+console.log(parola + " è una parola palindroma ");
+console.log(parola + " non è una parola palindroma ");   
 
 
 
