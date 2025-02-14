@@ -3,13 +3,18 @@
 */
 
 // chiedere all'utente una parola // 
-const parola = prompt("testo")
+const parola = prompt("VERIFICA SE LA PAROLA È PALINDROMA")
 // creo funzione e passo la parola //
 function controlloParola(parola){
  //meccanismo di controllo palindroma//
- 
-
-  // ritorno del risultato// 
+ const caratteri = parola.split('');
+ const invertita = caratteri.reverse().join('');
+ // ritorno del risultato// 
+ if (parola === invertita){
+    console.log(parola + " è una parola palindroma ");
+  }else {
+    console.log(parola + " non è una parola palindroma ");   
+  }
 } 
  
 
